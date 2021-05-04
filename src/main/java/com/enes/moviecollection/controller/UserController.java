@@ -3,7 +3,6 @@ package com.enes.moviecollection.controller;
 import com.enes.moviecollection.service.UserService;
 import com.enes.moviecollection.web.dto.UserRegistrationDto;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
