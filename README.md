@@ -49,7 +49,7 @@ Terminalde aşağıdaki kodları çalıştırdıktan sonra web tarayıcı url k�
 yönlendirmek ve yetkilerine göre kısıtlamak amacıyla kullandım.
 
 **JPA - Hibernate :** JPA sayesinde veritabanı işlemlerini Java’da class’lar ile gerçekleştirebilmekteyiz ***(JPQL)***.
-JPA, Hibernate gibi ORM'leri tek çatı altında kullanmayı amaçlamar. ORM ise nesneleri, ilişkisel veri tabanlarındaki
+JPA, Hibernate gibi ORM'leri tek çatı altında kullanmayı amaçlar. ORM ise nesneleri, ilişkisel veri tabanlarındaki
 kayıtlarla ilişkilendirir. Veri tabanı ile ilgili iletişimde rahatlık sağladığı için kullandım.
 
 **Thymeleaf :** Spring ile tam entegrasyon sağlamaktadır. Table yapılarında basitçe döngü oluşturabilmek, yönlendirmeler
