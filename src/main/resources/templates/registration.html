@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Registration</title>
+</head>
+<body>
+<!-- create navbar (header) -->
+<nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" th:href="@{/}">
+                <span class="iconify" data-icon="simple-icons:monzo" data-inline="false"
+                      style="width: 35px;height: 35px; margin-right: 5px"></span>
+                Movie Collection System</a>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <!-- success message -->
+            <div th:if="${param.success}">
+                <div class="alert alert-info">You've successfully registered
+                    to our awesome app!
+                </div>
+            </div>
+
+            <h1>Registration</h1>
+
+            <form method="post" th:action="@{/registration}" th:object="${user}">
+                <div class="form-group">
+                    <label class="control-label" for="firstName"> First Name </label>
+                    <input autofocus="autofocus" class="form-control" id="firstName"
+                           required th:field="*{firstName}"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="lastName"> Last Name </label> <input
+                        autofocus="autofocus" class="form-control" id="lastName"
+                        required th:field="*{lastName}"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="email"> Email </label> <input
+                        autofocus="autofocus" class="form-control" id="email" required
+                        th:field="*{email}"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="password"> Password </label> <input
+                        autofocus="autofocus" class="form-control" id="password"
+                        required th:field="*{password}" type="password"/>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-success" type="submit">Register</button>
+                    <span>Already you have an account? <a href="/" th:href="@{/login}">Login
+								here</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

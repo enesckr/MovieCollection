@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Collection System</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" th:href="@{/}">
+                <span class="iconify" data-icon="simple-icons:monzo" data-inline="false"
+                      style="width: 35px;height: 35px; margin-right: 5px"></span>
+                Movie Collection System</a>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+    <h1>Save Movie</h1>
+    <hr>
+    <form action="#" method="POST" th:action="@{/saveMovie}"
+          th:object="${movie}">
+        <input class="form-control mb-4 col-4" placeholder="Movie Name"
+               th:field="*{name}" type="text">
+
+        <input class="form-control mb-4 col-4" placeholder="Movie Type"
+               th:field="*{type}" type="text">
+
+        <input class="form-control mb-4 col-4" placeholder="Movie Language"
+               th:field="*{language}" type="text">
+        <input class="form-control mb-4 col-4" placeholder="Movie Media"
+               th:field="*{media}" type="text">
+
+        <input class="form-control mb-4 col-4" placeholder="Movie Description"
+               th:field="*{description}" type="text">
+
+        <input class="form-control mb-4 col-4" placeholder="Movie Year"
+               th:field="*{year}" type="number">
+
+        <button class="btn btn-info col-2" style="float: left" type="submit">Save</button>
+        <a class="btn btn-outline-danger col-2" th:href="@{/}" type="button"> Cancel</a>
+    </form>
+</div>
+</body>
+</html>

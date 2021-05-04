@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Collection System</title>
+
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" th:href="@{/actors/}">
+                <span class="iconify" data-icon="simple-icons:monzo" data-inline="false"
+                      style="width: 35px;height: 35px; margin-right: 5px"></span>
+                Movie Collection System</a>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+    <h2>Update Actor</h2>
+    <hr>
+    <form action="#" method="POST" th:action="@{/actors/saveActor}" th:object="${actor}">
+
+        <!-- Add hidden form field to handle update -->
+        <input th:field="*{id}" type="hidden"/>
+        <input class="form-control mb-4 col-4" th:field="*{firstName}" type="text">
+        <input class="form-control mb-4 col-4" th:field="*{lastName}" type="text">
+        <input class="form-control mb-4 col-4" th:field="*{role}" type="text">
+        <input class="form-control mb-4 col-4" th:field="*{movieId}" type="number">
+
+        <button class="btn btn-info col-2" style="float: left" type="submit">Update</button>
+        <a class="btn btn-outline-danger col-2" th:href="@{/actors/}" type="button">Cancel</a>
+
+    </form>
+</div>
+</body>
+</html>
