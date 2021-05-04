@@ -57,6 +57,12 @@ yapabilmek, form üzerinde değerleri yerleştirebilmek amacıyla kullandım.
 
 **Bootstrap :** Navbar, button, table gibi yapıları oluştururken kolaylık sağlaması amacıyla kullandım.
 
+![moviess1](https://user-images.githubusercontent.com/62398743/117024165-6d496b00-ad02-11eb-9623-4709d1a65c4d.png)
+![moviess2](https://user-images.githubusercontent.com/62398743/117024172-6e7a9800-ad02-11eb-88a3-64dae52fa332.png)
+![moviess3](https://user-images.githubusercontent.com/62398743/117024175-6e7a9800-ad02-11eb-8fd2-cb8ab78e597d.png)
+![moviess4](https://user-images.githubusercontent.com/62398743/117024179-6f132e80-ad02-11eb-96f9-7f6fb3ee4e94.png)
+![moviess5](https://user-images.githubusercontent.com/62398743/117024183-6f132e80-ad02-11eb-922c-77c40024f4e9.png)
+
 # Getting Started
 
 ### Reference Documentation
