@@ -1,5 +1,5 @@
 def buildApp() {
-    sh "mvm clean install"
+    sh "mvn clean install"
     sh "mvn spring-boot:run"
     echo 'building the application...'
 } 
