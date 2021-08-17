@@ -1,14 +1,18 @@
 def gv
 
 pipeline {
+	
     agent any
-		tools{
-				maven 'Maven-3.8.2'
-    	}
+	
+    tools{
+	maven 'Maven-3.8.2'
+    }
+	
     parameters {
         choice(name: 'VERSION', choices: ['1.1.0', '1.2.0', '1.3.0'], description: '')
         booleanParam(name: 'executeTests', defaultValue: true, description: '')
     }
+	
     stages {
         stage("init") {
             steps {
@@ -17,6 +21,7 @@ pipeline {
                 }
             }
         }
+	    
         stage("build") {
             steps {
                 script {
@@ -24,6 +29,7 @@ pipeline {
                 }
             }
         }
+	    
         stage("test") {
             when {
                 expression {
@@ -36,12 +42,14 @@ pipeline {
                 }
             }
         }
+	    
         stage("deploy") {
             steps {
                 script {
                     gv.deployApp()
                 }
-            }
+            }	
         }
+	    
     }   
 }
