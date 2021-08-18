@@ -1,5 +1,5 @@
 def buildApp() {
-    sh "mvn clean install"
+    sh "mvn clean install -DskipTests"
     sh "mvn spring-boot:run"
     echo 'building the application...'
 } 
@@ -9,7 +9,7 @@ def testApp() {
 } 
 
 def deployApp() {
-    echo 'deplying the application...'
+    echo 'deploying the application...'
     echo "deploying version ${params.VERSION}"
 } 
 
