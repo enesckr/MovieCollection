@@ -1,8 +1,8 @@
 # Movie Collection System
 
-**Movie Collection** film koleksiyon işlemleri için geliştirilmiştir. Sisteme kayıt olabilir ve giriş yapabilirsin.
+**Movie Collection** film koleksiyon işlemleri için geliştirilmiştir. Sisteme kayıt olabilir ve giriş yapabilirsiniz.
 Yetkilendirme mekanizması içermektedir. Sistemdeki rolünüze göre film ve aktör silebilir, güncelleyebilir,
-ekleyebilirsiniz. Filmin adı, türü, oyuncularının ad ve soyadlarına göre arama yapılabilir.
+ekleyebilirsiniz. Filmin adı, türü, oyuncularının ad ve soyadlarına göre arama yapılabilirsiniz.
 
 ### Not:
 
